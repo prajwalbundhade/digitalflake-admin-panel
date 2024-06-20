@@ -1,0 +1,14 @@
+.home-container {
+  text-align: center;
+  margin-top: 140px;
+ 
+}
+
+.home-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.home-container h2 {
+  margin-bottom: 20px;
+}

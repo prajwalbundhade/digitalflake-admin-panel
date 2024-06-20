@@ -1,0 +1,19 @@
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.signup-link {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.signup-link a {
+  color: #5C218B;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}

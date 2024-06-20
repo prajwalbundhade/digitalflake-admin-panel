@@ -1,0 +1,39 @@
+.sidebar {
+    width: 270px;
+    background-color: #e8e8e8;
+    position: fixed;
+    height: 100%;
+    padding-top: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  
+  .custom-icon{
+    padding-right: 10px;
+  }
+
+
+  
+  .sidebar-link {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 20px;
+    color: #333;
+    text-decoration: none;
+    
+  }
+  
+  .sidebar-link:hover,
+  .sidebar-link.active-link {
+    background-color: #5C218B;
+    color: white;
+    border-radius: 40px;
+  }
+  
+  .sidebar-link .fa-icon {
+    margin-right: 10px;
+  }
+  
