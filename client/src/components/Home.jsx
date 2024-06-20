@@ -8,8 +8,9 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    localStorage.removeItem('token'); // Clear token from localStorage
-    navigate('/login'); // Redirect to login page
+    localStorage.removeItem('token');
+    navigate('/login');
+    window.location.reload(); // Force a reload to update state
   };
 
   return (

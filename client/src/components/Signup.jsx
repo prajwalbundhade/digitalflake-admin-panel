@@ -12,8 +12,8 @@ const Signup = () => {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/auth/signup', { email, password }); // Updated endpoint URL
-      navigate('/login'); // Redirect to login after successful signup
+      await axios.post('http://localhost:5000/auth/signup', { email, password }); 
+      navigate('/login'); 
     } catch (error) {
       console.error('Signup error:', error);
     }

@@ -8,8 +8,8 @@ const CustomNavbar = () => {
   const [showModal, setShowModal] = useState(false);
 
   const handleLogout = () => {
-    localStorage.removeItem('token'); // Clear token from localStorage
-    window.location.reload(); // Refresh the page
+    localStorage.removeItem('token'); 
+    window.location.reload(); 
   };
 
   return (

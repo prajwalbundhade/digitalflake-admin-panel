@@ -4,7 +4,7 @@ import { Form, Button, Container } from 'react-bootstrap';
 import axios from 'axios';
 import './Login.css';
 
-const Login = () => {
+const Login = ({ setIsAuthenticated }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
@@ -12,9 +12,10 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/auth/login', { email, password }); // Updated endpoint URL
-      localStorage.setItem('token', response.data.token); // Store token in localStorage
-      navigate('/'); // Redirect to home
+      const response = await axios.post('http://localhost:5000/auth/login', { email, password });
+      localStorage.setItem('token', response.data.token);
+      setIsAuthenticated(true);
+      navigate('/'); 
     } catch (error) {
       console.error('Login error:', error);
     }
