@@ -1,5 +1,4 @@
-# My CRUD App
-
+# DigitalFlake Admin Panel
 This project is a CRUD (Create, Read, Update, Delete) application that includes functionalities for managing categories and subcategories. The app has both a backend server and a frontend client.
 
 ## Features
